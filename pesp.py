@@ -42,7 +42,7 @@ rowline=0
 FRow,LRow=0,0
 Frow,Lrow=0,0
 while(rowline!=row):
-    print "rowline"
+    #print "rowline"
     PLcol=0
     set, set1, set2, set3 = 0, 0, 0, 0
     for i in xrange(FRow, row):
@@ -84,7 +84,7 @@ while(rowline!=row):
                 if PLcol!=0:
                     if avg==0:
                         avg=2*(Fcol-PLcol)
-                    print avg,Fcol-PLcol
+                    #print avg,Fcol-PLcol
                     if (Fcol-PLcol)>(avg):
                         words+=" "
                 Lcol=i
@@ -141,7 +141,8 @@ while(rowline!=row):
                     letter=i[0]
             #print minValue
             words+=letter
-    print words
+    print 'Scanned:',words
+    print "Autocorrected:",
     word=''
     for i in words:
         if i==" ":
